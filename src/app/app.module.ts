@@ -11,6 +11,7 @@ import { LegislacaoModule } from 'src/view/legislacao/legislacao.module';
 import { JudiciarioModule } from 'src/view/judiciario/judiciario.module';
 import { OrdemMoisesModule } from 'src/view/judiciario/ordem-moises/ordem-moises.module';
 import { FooterModule } from 'src/components/footer/footer.module';
+import { CardMinisterioModule } from 'src/components/card-ministerio/card-ministerio.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterModule } from 'src/components/footer/footer.module';
     JudiciarioModule,
     OrdemMoisesModule,
     FooterModule,
+    CardMinisterioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
