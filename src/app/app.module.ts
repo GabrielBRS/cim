@@ -10,12 +10,12 @@ import { JudiciarioComponent } from 'src/view/judiciario/judiciario.component';
 import { LegislacaoModule } from 'src/view/legislacao/legislacao.module';
 import { JudiciarioModule } from 'src/view/judiciario/judiciario.module';
 import { OrdemMoisesModule } from 'src/view/judiciario/ordem-moises/ordem-moises.module';
+import { FooterModule } from 'src/components/footer/footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SenadoComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -24,6 +24,7 @@ import { OrdemMoisesModule } from 'src/view/judiciario/ordem-moises/ordem-moises
     LegislacaoModule,
     JudiciarioModule,
     OrdemMoisesModule,
+    FooterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
