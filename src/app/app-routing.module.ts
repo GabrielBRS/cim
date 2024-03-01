@@ -8,6 +8,7 @@ import { OrdemMoisesComponent } from 'src/view/judiciario/ordem-moises/ordem-moi
 import { SumulasVinculantesComponent } from 'src/view/judiciario/ordem-moises/sumulas-vinculantes/sumulas-vinculantes.component';
 import { LegislacaoComponent } from 'src/view/legislacao/legislacao.component';
 import { SenadoComponent } from 'src/view/senado/senado.component';
+import { TratadosComponent } from 'src/view/senado/tratados/tratados.component';
 import { SobreComponent } from 'src/view/sobre/sobre.component';
 import { TronoRealComponent } from 'src/view/trono-real/trono-real.component';
 
@@ -16,7 +17,11 @@ const routes: Routes = [
   {path:'reino-jerusalem',component:LegislacaoComponent},
   {path:'sobre',component:SobreComponent},
   {path:'trono-real',component:TronoRealComponent},
-  {path:'senado-federal',component:SenadoComponent},
+  {path:'senado-federal',component:SenadoComponent, children:[
+    // {path:'', component:TratadosComponent},
+    // {path:'tratados', component:TratadosComponent},
+  ]},
+  {path:'senado-federal/tratados', component:TratadosComponent},
   {path:'justica-federal',component:JudiciarioComponent, children:[
     {path:'', component:OrdemAraoComponent},
     {path:'ordem-arao', component:OrdemAraoComponent},

@@ -14,13 +14,13 @@
     margin-top: 30px;
 
     .title{
-      font-size: 24px;
+      font-size: 22px;
 
     }
 
     img{
-      width: 200px;
-      height: 150px;
+      width: 100px;
+      height: 75px;
     }
   }
 
@@ -76,4 +76,57 @@
         }
       }
   }
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.body-text{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: justify;
+
+  .citacao{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: justify;
+
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.meudna{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 900px;
+  height: 500px;
+
 }
