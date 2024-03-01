@@ -44,6 +44,7 @@ const routes: Routes = [
   // ]
 // },
   {path:'justica-estadual',component:SenadoComponent},
+  {path: '**', redirectTo: '/'}
 ];
 
 @NgModule({
