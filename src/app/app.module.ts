@@ -12,21 +12,40 @@ import { JudiciarioModule } from 'src/view/judiciario/judiciario.module';
 import { OrdemMoisesModule } from 'src/view/judiciario/ordem-moises/ordem-moises.module';
 import { FooterModule } from 'src/components/footer/footer.module';
 import { CardMinisterioModule } from 'src/components/card-ministerio/card-ministerio.module';
+import { OrdemAraoModule } from 'src/view/judiciario/ordem-arao/ordem-arao.module';
+import { FooterComponent } from 'src/components/footer/footer.component';
+import { TronoRealModule } from 'src/view/trono-real/trono-real.module';
+import { SenadoModule } from 'src/view/senado/Senado.module';
+import { SobreModule } from 'src/view/sobre/sobre.module';
+import { HomeModule } from 'src/view/home/home.module';
+import { TratadosModule } from 'src/view/senado/tratados/tratados.module';
+import { DoutrinaRabinicaModule } from 'src/view/judiciario/ordem-moises/doutrina-rabinica/doutrina-rabinica.module';
+import { SumulasVinculantesModule } from 'src/view/judiciario/ordem-moises/sumulas-vinculantes/sumulas-vinculantes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SenadoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NavBarModule,
-    LegislacaoModule,
-    JudiciarioModule,
-    OrdemMoisesModule,
     FooterModule,
+    LegislacaoModule,
+    TronoRealModule,
+    SenadoModule,
+    JudiciarioModule,
+    SobreModule,
+    HomeModule,
+    OrdemMoisesModule,
+    OrdemAraoModule,
+    TratadosModule,
+    DoutrinaRabinicaModule,
+    SumulasVinculantesModule,
+
     CardMinisterioModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

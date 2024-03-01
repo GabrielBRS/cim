@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from 'src/view/home/home.component';
 import { JudiciarioComponent } from 'src/view/judiciario/judiciario.component';
 import { OrdemAraoComponent } from 'src/view/judiciario/ordem-arao/ordem-arao.component';
+import { OrdemAraoModule } from 'src/view/judiciario/ordem-arao/ordem-arao.module';
 import { DoutrinaRabinicaComponent } from 'src/view/judiciario/ordem-moises/doutrina-rabinica/doutrina-rabinica.component';
 import { OrdemMoisesComponent } from 'src/view/judiciario/ordem-moises/ordem-moises.component';
 import { SumulasVinculantesComponent } from 'src/view/judiciario/ordem-moises/sumulas-vinculantes/sumulas-vinculantes.component';
@@ -49,7 +50,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'}),
+  OrdemAraoModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
