@@ -29,7 +29,7 @@ const routes: Routes = [
     {path:'sumula-vinculante', component:SumulasVinculantesComponent},
     {path:'doutrina-rabinica',component:DoutrinaRabinicaComponent},
   ]},
-  {path:'justica-federal/ordem-arao', component:OrdemAraoComponent},
+  {path:'justica-federal/ordem-aarao', component:OrdemAraoComponent},
 
 
   // children:[
