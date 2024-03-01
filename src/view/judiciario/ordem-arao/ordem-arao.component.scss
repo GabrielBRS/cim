@@ -1,9 +1,48 @@
 .box{
   display: flex;
   flex-direction: column;
-  min-height: 0;
-  min-width: 0;
+  width: 100%;
+  height: 100%;
 
+  .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+    .title{
+      font-size: 24px;
+
+    }
+
+    .sub{
+      margin-top: -35px;
+    }
+
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .texto-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+
+    .title-sub{
+      font-size: 24px;
+    }
+
+  }
 }
 
 .title{
@@ -107,4 +146,28 @@
 
   }
 
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.button{
+  display: flex;
+  flex-direction: row;
+  background-color: #0d3b5c;
+  padding: 10px;
+  margin-right: 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #fff;
+  &:hover{
+    background-color: #082e4b;
+  }
 }

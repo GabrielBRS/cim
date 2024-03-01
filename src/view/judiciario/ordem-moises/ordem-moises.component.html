@@ -1,13 +1,38 @@
 <div class="box">
-  <div class="buttons">
-    <a routerLink="sumula-vinculante">
-      Súmula Vinculante
-    </a>
+  <div class="texto">
+    <div class="title">
+      JUDICIÁRIO DE JERUSALÉM
+    </div>
+    <div class="title">
+      הרשות השופטת בירושלים
+    </div>
+    <img src="/assets/judiciario.png" alt="">
   </div>
   <div class="buttons">
-    <a routerLink="doutrina-rabinica">
-      Doutrina Rabínica
-    </a>
+    <div class="groups groups-frist">
+      <div>
+        <a href="/justica-federal/ordem-moises" class="button">
+          Ordem de Moisés
+        </a>
+      </div>
+      <div>
+        <a href="/justica-federal/ordem-arao" class="button">
+          Ordem de Arão
+        </a>
+      </div>
+    </div>
+    <div class="groups groups-second">
+      <div>
+        <a routerLink="//justica-federal/ordem-moises/sumula-vinculante" class="button">
+          Súmula Vinculante
+        </a>
+      </div>
+      <div>
+        <a routerLink="//justica-federal/ordem-moises/doutrina-rabinica" class="button">
+          Doutrina Rabínica
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>

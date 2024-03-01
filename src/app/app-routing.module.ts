@@ -22,16 +22,27 @@ const routes: Routes = [
     // {path:'tratados', component:TratadosComponent},
   ]},
   {path:'senado-federal/tratados', component:TratadosComponent},
-  {path:'justica-federal',component:JudiciarioComponent, children:[
-    {path:'', component:OrdemAraoComponent},
-    {path:'ordem-arao', component:OrdemAraoComponent},
-    {path:'ordem-moises', component:OrdemMoisesComponent, children:[
-      {path:'', component:SumulasVinculantesComponent},
-      {path:'doutrina-rabinica', component:DoutrinaRabinicaComponent},
-      {path:'sumula-vinculante', component:SumulasVinculantesComponent},
-    ]},
-
+  {path:'justica-federal', component:JudiciarioComponent},
+  {path:'justica-federal/ordem-arao', component:OrdemAraoComponent},
+  {path:'justica-federal/ordem-moises', component:OrdemMoisesComponent, children:[
+    {path:'', component:SumulasVinculantesComponent},
+    {path:'sumula-vinculante', component:SumulasVinculantesComponent},
+    {path:'doutrina-rabinica',component:DoutrinaRabinicaComponent},
   ]},
+
+  // children:[
+  //   // {path:'', component:JudiciarioComponent},
+  //   // {path:'ordem-arao', component:OrdemAraoComponent},
+  //   {path:'ordem-moises', component:OrdemMoisesComponent, children:[
+  //     {path:'', component:SumulasVinculantesComponent},
+  //     {path:'doutrina-rabinica', component:DoutrinaRabinicaComponent},
+  //     {path:'sumula-vinculante', component:SumulasVinculantesComponent},
+  //   ]
+  // },
+  //   {path:'justica-federal/ordem-arao', component:OrdemAraoComponent},
+
+  // ]
+// },
   {path:'justica-estadual',component:SenadoComponent},
 ];
 

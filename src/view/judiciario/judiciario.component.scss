@@ -1,30 +1,83 @@
 .box{
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  min-height: 0;
-}
+  width: 100%;
+  height: 100%;
 
-.texto{
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  min-height: 0;
-
-  .title{
+  .texto{
     display: flex;
     flex-direction: column;
-    min-width: 0;
-    min-height: 0;
+    justify-content: center;
+    align-self: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+    .title{
+      font-size: 24px;
+
+    }
+
+    img{
+      width: 200px;
+      height: 150px;
+    }
+  }
+
+  .texto-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-size: 24px;
-    text-transform: uppercase;
 
+    .title-sub{
+      font-size: 24px;
 
+    }
+
+    img{
+      width: 200px;
+      height: 150px;
+    }
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    // align-items: center;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    // flex:1;
+    // height: 100%;
+    // justify-content: center;
+    // align-items: center;
+    // // align-self: center;
+    // margin-top: 20px;
+      margin-top: 20px;
+      margin-right: 30px;
+
+      a{
+        padding: 5px;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+          color: #0d3b5c;
+          text-decoration: underline;
+        }
+      }
   }
 }
+
 
 .content{
   display: flex;
@@ -58,5 +111,80 @@
   color: #fff;
   &:hover{
     background-color: #082e4b;
+  }
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+    .title{
+      font-size: 24px;
+
+    }
+
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .texto-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+
+    .title-sub{
+      font-size: 24px;
+    }
+
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    // align-items: center;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    // flex:1;
+    // height: 100%;
+    // justify-content: center;
+    // align-items: center;
+    // // align-self: center;
+    // margin-top: 20px;
+      margin-top: 20px;
+      margin-right: 30px;
+
+      a{
+        padding: 5px;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+          color: #0d3b5c;
+          text-decoration: underline;
+        }
+      }
   }
 }
