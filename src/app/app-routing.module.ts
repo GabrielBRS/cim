@@ -23,12 +23,13 @@ const routes: Routes = [
   ]},
   {path:'senado-federal/tratados', component:TratadosComponent},
   {path:'justica-federal', component:JudiciarioComponent},
-  {path:'justica-federal/ordem-arao', component:OrdemAraoComponent},
   {path:'justica-federal/ordem-moises', component:OrdemMoisesComponent, children:[
     {path:'', component:SumulasVinculantesComponent},
     {path:'sumula-vinculante', component:SumulasVinculantesComponent},
     {path:'doutrina-rabinica',component:DoutrinaRabinicaComponent},
   ]},
+  {path:'justica-federal/ordem-arao', component:OrdemAraoComponent},
+
 
   // children:[
   //   // {path:'', component:JudiciarioComponent},
